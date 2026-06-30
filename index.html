@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allen Workspace</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      background: #f5f6f8;
+      color: #1d2530;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+    }
+    .wrap {
+      width: min(920px, 100%);
+    }
+    h1 {
+      margin: 0;
+      font-size: 38px;
+    }
+    .sub {
+      margin: 10px 0 36px;
+      color: #6d7480;
+      font-size: 16px;
+    }
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #9aa1ac;
+      margin: 0 0 16px 4px;
+      text-transform: uppercase;
+    }
+    .section-title:not(:first-of-type) {
+      margin-top: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: white;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 28px rgba(0,0,0,.07);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 36px rgba(0,0,0,.12);
+    }
+    .icon {
+      font-size: 34px;
+      margin-bottom: 18px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .desc {
+      color: #737b87;
+      line-height: 1.55;
+      font-size: 14px;
+    }
+    .backstage .card {
+      background: #eef0f3;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Allen Workspace</h1>
+    <p class="sub">我的旅行内容、销售工具与知识库总入口</p>
+
+    <p class="section-title">对客展示</p>
+    <section class="grid">
+      <a class="card" href="https://haleilaodeng-allen.github.io/travel/" target="_blank">
+        <div class="icon">🌍</div>
+        <div class="title">旅行地球</div>
+        <div class="desc">3D 地球导航,点击探索各目的地。</div>
+      </a>
+      <a class="card" href="https://haleilaodeng-allen.github.io/guide/" target="_blank">
+        <div class="icon">📖</div>
+        <div class="title">旅行攻略</div>
+        <div class="desc">餐厅、体验与目的地灵感,面谈时直接展示。</div>
+      </a>
+      <a class="card" href="https://haleilaodeng-allen.github.io/avc-points/promo.html" target="_blank">
+        <div class="icon">🎁</div>
+        <div class="title">促销展示</div>
+        <div class="desc">面向客户的积分促销展示页。</div>
+      </a>
+    </section>
+
+    <p class="section-title">自己用的后台</p>
+    <section class="grid backstage">
+      <a class="card" href="https://haleilaodeng-allen.github.io/avc-points/avc-query.html" target="_blank">
+        <div class="icon">🏨</div>
+        <div class="title">积分查询</div>
+        <div class="desc">AVC 酒店积分查询系统,预算扫描与单店模式。</div>
+      </a>
+      <a class="card" href="https://haleilaodeng-allen.github.io/avc-points/avc-cleaner.html" target="_blank">
+        <div class="icon">🧹</div>
+        <div class="title">数据清洗</div>
+        <div class="desc">积分数据清洗工具。</div>
+      </a>
+      <a class="card" href="https://haleilaodeng-allen.github.io/avc-points/avc-packer.html" target="_blank">
+        <div class="icon">📦</div>
+        <div class="title">批量打包</div>
+        <div class="desc">积分数据批量打包工具。</div>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
